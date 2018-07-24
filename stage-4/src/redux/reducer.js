@@ -1,4 +1,4 @@
-import * as productsController from './productsController';
+import productsController from './productsController';
 
 // Constants
 const ADD_TO_SHOPPING_CART = "ADD_TO_SHOPPING_CART";

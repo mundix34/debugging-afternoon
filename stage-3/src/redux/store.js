@@ -1,4 +1,12 @@
 import reducer from './reducer';
-import reduxPromiseMiddleware from 'redux-promise-middleware';
+import {createStore} from 'redux';
+export default createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-export default createStore(reducer, applyMiddleware(reduxPromiseMiddleware()));
+
+// import reduxPromiseMiddleware from 'redux-promise-middleware';
+
+// export default createStore(reducer, applyMiddleware(reduxPromiseMiddleware()));
+
+
+
+// import reducer from './ducks/reducer';
